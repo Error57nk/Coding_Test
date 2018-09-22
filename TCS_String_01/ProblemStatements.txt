@@ -1,0 +1,16 @@
+Using command line arguments 
+Three name/string are there in first string replace vowel with #
+in second string replace consonent with *
+in third string  make it to uppercase.
+
+
+eg 
+	Input as command line
+		roshan rahul nitesh
+	Output
+		r#sh#n *a*u* NITESH 
+
+
+
+
+SOLUTION ARE GIVEN
