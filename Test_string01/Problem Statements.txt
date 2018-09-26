@@ -1,5 +1,5 @@
 Write a program that replaces the occurence of a given character (say c)
-in a primary string (say PS) with another string (say s).
+in a string (say PS) with another string (say s).and store it to a new string;
 
 Input:
 The first line contains the primary string (PS)
@@ -13,3 +13,11 @@ NOTE:
 - There are no whitespaces in PS or s. 
 - Maximum length of PS is 100.
 - Maximum length of s is 10.
+
+SAMPLE I/O
+input:
+ps= my name is nitesh kumar loves doing coding
+c= a
+s=*bt*
+Output:
+my n*bt*me is nitesh kum*bt*r loves doing coding
