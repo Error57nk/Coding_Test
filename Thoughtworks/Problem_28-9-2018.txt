@@ -1,0 +1,15 @@
+Q. A string is given eg, 2(ab)3(cd) then the output will be
+	ababcdcdcd   2 times ab and 3 times cd 
+   write a program ..
+
+
+Example--------
+INPUT:-
+
+2(abcd)12(***)
+
+
+Output:-
+
+abcdabcd************************************
+
