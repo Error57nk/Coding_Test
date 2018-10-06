@@ -1,0 +1,3 @@
+Find the first non-repeated (unique) character in a given string. for Example if given String is "Morning" 
+then it should print "M"
+
