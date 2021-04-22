@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+:root {
+  --primary-color: #bfe6ff;
+  --primary-color2: #0869af;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 100vh;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  min-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--primary-color2);
+  padding: 40px 20px;
+  background-color: rgb(230, 246, 255);
+  box-shadow: 3px 4px 6px #333;
+}
+.nmt-10 {
+  margin-top: 10px;
+}
+.nmt-15 {
+  margin-top: 15px;
+}
+.nmt-20 {
+  margin-top: 20px;
+}
+.nmb-5 {
+  margin-bottom: 5px;
+}
+.nmb-10 {
+  margin-bottom: 10px;
+}
+.nmb-15 {
+  margin-bottom: 15px;
+}
+.nmb-20 {
+  margin-bottom: 20px;
+}
+.dose-box {
+  display: flex;
+}
+.dose-box h2 {
+  margin-bottom: 30px;
+}
+.txt-center {
+  text-align: center;
+  display: block;
+}
+.dose-box__ppic {
+  position: relative;
+  flex: 1;
+  background-color: bisque;
+  padding: 10px 5px 5px 5px;
+  z-index: 1;
+  overflow: hidden;
+}
+.dose-box__ppic::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: -32px;
+  left: -32px;
+  z-index: 99;
+}
+.dose-info {
+  flex: 2;
+  padding: 10px;
+  padding-left: 20px;
+}
+.dose-box__ppic img {
+  border-radius: 50%;
+  height: 100px;
+  width: auto;
+  border: 3px solid rgba(100, 99, 99, 0.788);
+}
+.inputbox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.inputbox .item1 {
+  border-color: transparent;
+  background-color: #fff;
+  color: #777;
+  font-size: 17px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+.btn-active {
+  background-color: var(--primary-color2);
+  color: #fff;
+}
+.item3 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.item2 {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.inputbox .item2,
+.inputbox .item3 {
+  border: unset;
+  font-size: 17px;
+  text-align: center;
+  padding: 4px;
+  transition: 0.3s;
+}
+.item2:hover,
+.item3:hover {
+  background-color: var(--primary-color2);
+  color: #fff;
+}
+.nbtn {
+  padding: 4px 20px;
+  background-color: var(--primary-color2);
+  color: #fff;
+  border-color: transparent;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.nbtn:hover {
+  opacity: 0.7;
+}
+.nf-l {
+  float: right;
+}
+@media screen and (max-width: 506px) {
+  .container {
+    min-width: 320px;
+  }
+  .dose-box {
+    flex-direction: column;
+  }
+  .inputbox .item1 {
+    width: 150px;
+  }
+}

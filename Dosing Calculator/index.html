@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/style.css">
+  <title>Dosing Calculator</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2 class="nmb-20">Dosing calculator</h2>
+    <div class="dose-box">
+      <div class="dose-box__ppic txt-center">
+        <img src="./static/images/default.jpg" alt="Profile Picture">
+        <p class="pp-name ">Patient Profile</p>
+      </div>
+      <div class="dose-info">
+        <h3>Enter Patient's Weight</h3>
+        <div class="inputbox">
+
+          <input class="item1" type="tel" id="dosingVal" placeholder="Weight">
+
+
+          <button class="item2 btn-active" onclick="getInput(this)" id="btnlb">Lb</button>
+
+          <button class="item3" onclick="getInput(this)" id="btnkg">Kg</button>
+
+        </div>
+        <p class="nmt-20" id="dosingot">&nbsp;</p>
+      </div>
+    </div>
+    <div class="nmt-20">
+      <button class="nbtn nf-l">Next &rarr;</button>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./static/main.js"></script>
+</body>
+
+</html>
