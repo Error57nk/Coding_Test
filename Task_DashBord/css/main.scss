@@ -1,0 +1,16 @@
+@import "variables/color";
+@import "base/setupBootstrap";
+@import "base/base";
+@import "base/shortcuts";
+// @import "base/animation";
+@import "mixin/mixin";
+@import "mixin/function";
+@import "components/components";
+@import "components/buttons";
+@import "components/form";
+@import "layout/layout";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+// Pages
+@import "pages/home";
