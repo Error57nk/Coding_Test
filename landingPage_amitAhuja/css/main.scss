@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 52.4%;
+}
+body {
+  background: #cccccc59;
+  font-family: "Courier New", Courier, monospace;
+  font-size: inherit;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 20px;
+  background: url(./bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nlink-st {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  // background-color: red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    transform: rotate(60deg);
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    top: 0;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    transform: rotate(120deg);
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    top: 0;
+  }
+}
+
+.nlink {
+  background: url(./nhexa2.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 10px;
+}

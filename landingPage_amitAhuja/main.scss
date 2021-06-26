@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 52.4%;
+}
+body {
+  background: #cccccc59;
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 20px;
+  background: url(./images/bg-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nlink-st {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 80px;
+  border-radius: 10px;
+  // background-color: red;
+  border-left: 2px solid red;
+  border-right: 2px solid red;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    transform: rotate(60deg);
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    top: 0;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: inherit;
+    transform: rotate(120deg);
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    top: 0;
+  }
+}
+
+.nlink {
+  background: url(./icons/hexa.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.main-nav {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo {
+    img {
+      height: 60px;
+      width: auto;
+    }
+  }
+  &__link {
+    // position: relative;
+    .home-btn {
+      position: relative;
+      background: transparent;
+      border: none;
+      color: #fff;
+      z-index: 999;
+      font-size: 20px;
+      .link-name {
+        font-family: inherit;
+        text-transform: uppercase;
+        font-size: 600;
+        margin-right: 20px;
+        transition: 0.3s;
+        display: none;
+      }
+    }
+    .side-link {
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      // top: 50px;
+      right: 0;
+      width: 70vw;
+      height: 0px;
+      padding-left: 0;
+      padding-right: 40px;
+      padding-top: 104px;
+      background: linear-gradient(
+        to left,
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0.432),
+        rgba(255, 255, 255, 0)
+      );
+
+      overflow: hidden;
+      transition: background 0.3s 0.3s, height 0.3s;
+      li {
+        margin-bottom: 12px;
+        font-weight: 600;
+
+        a {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          font-size: 12px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: #fff;
+          span {
+            margin-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bt-nav {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  &__btn {
+    background: transparent;
+    border: none;
+    color: #fff;
+    opacity: 0.7;
+  }
+}
